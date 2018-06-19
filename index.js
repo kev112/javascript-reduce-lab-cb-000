@@ -12,6 +12,7 @@ const callBack = (accumulator, sentence) => {
     accumulator[wordCount] += 1;
   } else {
     accumulator[wordCount] = 1; }
+  return accumulator;
 };
 
 const monologueLines = [
