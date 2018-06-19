@@ -13,10 +13,6 @@ const callBack = (accumulator, sentence) => {
   return accumulator;
 };
 
-let wordCountMap = monologueLines.reduce(callBack,{});
-
-
-
 const monologueLines = [
   'Who are you talking to right now?',
   'Who is it you think you see?',
@@ -33,3 +29,5 @@ const monologueLines = [
   'No.',
   'I am the one who knocks!'
 ];
+
+let wordCountMap = monologueLines.reduce(callBack,{});
