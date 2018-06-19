@@ -2,7 +2,7 @@ const batteryBatches = [4, 5, 3, 4, 4, 6, 5];
 
 let totalBatteries;
 
-totalBatteries = batteryBatches.reduce((a,b) =>  a + b , 0);
+totalBatteries = batteryBatches.reduce((a,b) => return a + b , 0);
 
 const callBack = (accumulator, sentence) => {
   let wordCount = sentence.split(' ').length;
@@ -10,7 +10,7 @@ const callBack = (accumulator, sentence) => {
     accumulator[wordCount] += 1;
   } else {
     accumulator[wordCount] = 1; }
-  // return accumulator;
+  return accumulator;
 };
 
 const monologueLines = [
