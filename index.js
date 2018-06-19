@@ -4,7 +4,7 @@ let totalBatteries;
 
 const batteryCallback = (a,b) => {
   let c = a + b;
-  return c;
+  // return c;
 };
 
 totalBatteries = batteryBatches.reduce(batteryCallback, 0);
