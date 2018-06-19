@@ -4,8 +4,6 @@ let totalBatteries;
 
 totalBatteries = batteryBatches.reduce((a,b) =>  a + b , 0);
 
-let wordCountMap = monologueLines.reduce(callBack,{});
-
 const callBack = (accumulator, sentence) => {
   let wordCount = sentence.split(' ').length;
   if (accumulator[wordCount] > 0) {
@@ -14,6 +12,10 @@ const callBack = (accumulator, sentence) => {
     accumulator[wordCount] = 1; }
   return accumulator;
 };
+
+let wordCountMap = monologueLines.reduce(callBack,{});
+
+
 
 const monologueLines = [
   'Who are you talking to right now?',
