@@ -4,7 +4,7 @@ let totalBatteries;
 
 totalBatteries = batteryBatches.reduce((a,b) =>  a + b , 0);
 
-let wordCountMap;
+let wordCountMap
 
 const monologueLines = [
   'Who are you talking to right now?',
