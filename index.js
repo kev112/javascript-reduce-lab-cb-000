@@ -2,7 +2,9 @@ const batteryBatches = [4, 5, 3, 4, 4, 6, 5];
 
 let totalBatteries;
 
-totalBatteries = batteryBatches.reduce((a,b) => return (a + b) , 0);
+const batteryCallback = (a,b) => return (a + b)
+
+totalBatteries = batteryBatches.reduce(batteryCallback, 0);
 
 const callBack = (accumulator, sentence) => {
   let wordCount = sentence.split(' ').length;
